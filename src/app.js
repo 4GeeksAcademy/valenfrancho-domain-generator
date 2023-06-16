@@ -37,34 +37,3 @@ let domains = generateDomain(genericPron, funAdj, randomNoun, randomExt);
 document.querySelector("#domain").innerHTML = domains
   .map(domain => '<li class="list-group-item">' + domain + "</li>")
   .join("");
-
-// document.querySelector("#domain").innerHTML = generateDomain(
-//   genericPron,
-//   funAdj,
-//   randomNoun,
-//   randomExt
-// );
-
-// let possibleDomains = generateDomain(
-//   genericPron,
-//   funAdj,
-//   randomNoun,
-//   randomExt
-// );
-
-// function removeCommas() {
-//   for (let i = 0; i < possibleDomains.length; i++) {
-//     let final = '<li class="list-group-item">' + possibleDomains[i] + "</li>";
-//     document.querySelector("#domain").innerHTML = final;
-//   }
-// }
-
-// removeCommas();
-
-/* <ul class="list-group list-group-flush">
-  <li class="list-group-item">An item</li>
-  <li class="list-group-item">A second item</li>
-  <li class="list-group-item">A third item</li>
-  <li class="list-group-item">A fourth item</li>
-  <li class="list-group-item">And a fifth one</li>
-</ul>; */
