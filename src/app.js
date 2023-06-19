@@ -28,12 +28,19 @@ function generateDomain(pronoun, adjective, noun, extension) {
   return result;
 }
 
-let genericPron = ["the", "a", "my"];
-let funAdj = ["rambunctious", "lively", "wacky", "mischievous"];
+let genericPronoun = ["the", "a", "my"];
+let funAdjective = ["rambunctious", "lively", "wacky", "mischievous"];
 let randomNoun = ["potato", "escalator", "illustration", "marshmallow", "cone"];
-let randomExt = [".com", ".art", ".shop", ".move"];
+let randomExtension = [".com", ".art", ".shop", ".move"];
 
-let domains = generateDomain(genericPron, funAdj, randomNoun, randomExt);
+let domains = generateDomain(
+  genericPronoun,
+  funAdjective,
+  randomNoun,
+  randomExtension
+);
+
 document.querySelector("#domain").innerHTML = domains
+  // Remove commas from the array
   .map(domain => '<li class="list-group-item">' + domain + "</li>")
   .join("");
